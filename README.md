@@ -68,4 +68,4 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For any questions or suggestions, please contact [UdohLawrence] at [lawrenceaudoh@gmail.com].
+For any questions or suggestions, please contact UdohLawrence at lawrenceaudoh@gmail.com.
