@@ -1,50 +1,71 @@
-# React + TypeScript + Vite
+# Chrome Extension for Extracting HTML Tables to XLSX
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This Chrome extension allows users to extract HTML tables from web pages and save them in the XLSX format. Built using Vite, React, and TypeScript, it provides a seamless and efficient way to convert and download HTML table data.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Extract HTML tables from any web page.
+- Save extracted tables in XLSX format.
+- Easy-to-use interface.
+- Lightweight and fast.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To install the extension locally:
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/UdohLawrence/table_to_excel.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd table_to_excel
+    ```
+3. Install the dependencies:
+    ```bash
+    pnpm install
+    ```
+4. Build the project:
+    ```bash
+    pnpm build
+    ```
+5. Open Chrome and go to `chrome://extensions/`.
+6. Enable "Developer mode" (top right corner).
+7. Click "Load unpacked" and select the `dist` directory.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Usage
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Navigate to a web page containing the HTML table you want to extract.
+2. Click on the extension icon in the Chrome toolbar.
+3. Follow the prompts to select the table and save it in XLSX format.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Development
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+To run the extension in development mode:
+
+1. Start the development server:
+    ```bash
+    pnpm dev
+    ```
+2. Open Chrome and go to `chrome://extensions/`.
+3. Enable "Developer mode" (top right corner).
+4. Click "Load unpacked" and select the `dist` directory.
+
+## Technologies Used
+
+- **Vite:** For fast and optimized bundling.
+- **React:** For building the user interface.
+- **TypeScript:** For type-safe development.
+- **xlsx:** For generating XLSX files from HTML tables.
+
+## Contributing
+
+Contributions are welcome! Please fork this repository and submit pull requests.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For any questions or suggestions, please contact [UdohLawrence] at [lawrenceaudoh@gmail.com].
